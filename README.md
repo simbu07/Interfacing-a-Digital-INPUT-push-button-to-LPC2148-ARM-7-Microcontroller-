@@ -1,14 +1,9 @@
-# Interfacing-a-Digital-INPUT-push-button-to-LPC2148-ARM-7-Microcontroller-
-Name :
-Roll no 
-Date of experiment :
-
-Ex. No. : 3
-Date: 
+# Ex-03-Interfacing-a-Digital-INPUT-push-button-to-LPC2148-ARM-7-Microcontroller
  
-### Aim: To Interface a Digital input (pushbutton ) to LPC2148 ARM 7 and write a code to switch on and of an LED 
+### Aim: 
+To Interface a Digital input (pushbutton ) to LPC2148 ARM 7 and write a code to switch on and of an LED 
 Components required: Proteus ISIS professional suite, Kiel μ vision 5 Development environment 
-### Theory 
+### Theory: 
 The full form of an ARM is an advanced reduced instruction set computer (RISC) machine, and it is a 32-bit processor architecture expanded by ARM holdings. The applications of an ARM processor include several microcontrollers as well as processors. The architecture of an ARM processor was licensed by many corporations for designing ARM processor-based SoC products and CPUs. This allows the corporations to manufacture their products using ARM architecture. Likewise, all main semiconductor companies will make ARM-based SOCs such as Samsung, Atmel, TI etc.
 
 
@@ -41,16 +36,16 @@ The main features of LPC2148 include the following.
 
 ### Procedure:
 For creation of project on    Kiel μ vision 5 Development environment (LPC21 XX/48/38)
-1.	Click on the menu Project — New µVision Project creates a new project. Select an empty folder and enter the project name, for example Project1. It is good practice to use a separate folder for each project.
-2.	Next, the dialog Select Device for Target opens.
+### STEP 1:	Click on the menu Project — New µVision Project creates a new project. Select an empty folder and enter the project name, for example Project1. It is good practice to use a separate folder for each project.
+### STEP 2:	Next, the dialog Select Device for Target opens.
 
  
 
 Figure -01 Target selection
 Select the device database. Default is Software Packs. You can have various local device databases, which show up in the drop-down box. For legacy devices (Arm7, Arm9), use the Legacy Device Database [no RTE]
-3.	Select the device for your application. This selection defines essential tool settings such as compiler controls, the memory layout for the linker, and the Flash programming algorithms.
-4.	Click OK.
-5.	Click on the new file option and save the file using save option with .C extension 
+### STEP 3:	Select the device for your application. This selection defines essential tool settings such as compiler controls, the memory layout for the linker, and the Flash programming algorithms.
+### STEP 4:	Click OK.
+### STEP 5:	Click on the new file option and save the file using save option with .C extension 
 
 
 
@@ -58,70 +53,109 @@ For creating the simulation environment in Proteus suite
 Starting New Design
 ![image](https://user-images.githubusercontent.com/36288975/193398020-d0963a16-4349-4979-87d7-4c9dc11e2346.png)
 
-Step 1: Open ISIS software and select New design in  File menu
+### Step 1: Open ISIS software and select New design in  File menu
  ![image](https://user-images.githubusercontent.com/36288975/193398023-cb8690cf-914a-47e3-8901-c8db3e4cd223.png)
 
 Figure -02 Proteus File Menu
 
- Step 2: A dialogue box appears to save the current design. However, we are creating a new design file so you can click Yes or No depending on the content of the present file. Then a Pop-Up appears asking to select the template. It is similar to selecting the paper size while printing. For now select default or according to the layout size of the circuit.
+ ### Step 2: A dialogue box appears to save the current design. However, we are creating a new design file so you can click Yes or No depending on the content of the present file. Then a Pop-Up appears asking to select the template. It is similar to selecting the paper size while printing. For now select default or according to the layout size of the circuit.
+ #### Figure -03 Proteus Default Template Select
  ![image](https://user-images.githubusercontent.com/36288975/193398027-fd5ae82c-341e-4ed9-aaa4-6bf7574c1a39.png)
 
-  Figure -03 Proteus Default Template Select
- 
-Step 3:An untitled design sheet will be opened, save it according to your wish,it is better to create a new folder for every layout as it generates other files supporting your design. However,it is not mandatory.
-![image](https://user-images.githubusercontent.com/36288975/193398031-03ecd6a5-d9b1-4a60-9dee-009c17a3f5dd.png)
   
-  Figure -04 Proteus Design Sheet
  
-Step 4:To Select components, Click on the component mode button.
+### Step 3:
+An untitled design sheet will be opened, save it according to your wish,it is better to create a new folder for every layout as it generates other files supporting your design. However,it is not mandatory.
+#### Figure -03 Proteus Default Template Select
+![image](https://user-images.githubusercontent.com/36288975/193398031-03ecd6a5-d9b1-4a60-9dee-009c17a3f5dd.png)
+### Step 4:
+To Select components, Click on the component mode button.
+
+#### Figure -05 Component Mode
  ![image](https://user-images.githubusercontent.com/36288975/193398044-5e0d1fe6-1d2b-4b54-9c54-f2904b234343.png)
 
-Figure -05 Component Mode
-Step 5:Click On Pick from Libraries. It shows the categories of components available and a search option to enter the part name.
- ![image](https://user-images.githubusercontent.com/36288975/193398047-f1d5f143-7980-45de-99f2-30b3c4bc04d6.png)
+### Step 5:
 
-  Figure -06 Pick from Libraries
+Click On Pick from Libraries. It shows the categories of components available and a search option to enter the part name.
+ #### Figure -06 Pick from Libraries
+![image](https://user-images.githubusercontent.com/36288975/193398047-f1d5f143-7980-45de-99f2-30b3c4bc04d6.png)
 
-Step 6: Select the components from categories or type the part name in Keywords text box.
+
+
+### Step 6: 
+Select the components from categories or type the part name in Keywords text box.
  Place all the required components and route the wires i.e, make connections.
 Either selection mode above the component mode or component mode allows to connect through wires. Left click from one terminal to other to make connection. Double right-click on the connected wire or the component to remove connection or the component respectively.
- ![image](https://user-images.githubusercontent.com/36288975/193398050-d6d28800-0c5b-4f5c-a77c-227f3336a125.png)
+####  Figure -07 Component Properties Selection
 
- Figure -07 Component Properties Selection
+![image](https://user-images.githubusercontent.com/36288975/193398050-d6d28800-0c5b-4f5c-a77c-227f3336a125.png)
+
 Double click on the component to edit the properties of the components and click on Ok.
-Step 8: Select ARM microcontroller form the library – pick part 
- ![image](https://user-images.githubusercontent.com/36288975/193398055-587ebd36-4b82-4eaf-837c-f94c3cf2d071.png)
+### Step 8: Select ARM microcontroller form the library – pick part 
+#### Figure -08 LPC2138/48 selection
+![image](https://user-images.githubusercontent.com/36288975/193398055-587ebd36-4b82-4eaf-837c-f94c3cf2d071.png)
   
-Figure -08 LPC2138/48 selection
-Step 7:
+### Step 7:
 
 After making necessary connections click on debug from 
- Figure -09 Keywords Textbox
+
 Example shows selection of push button. Select the components accordingly.
+ ####  Figure -09 Keywords Textbox
  ![image](https://user-images.githubusercontent.com/36288975/193398058-2519b9d0-a2ca-421f-957d-7507fc7791b8.png)
 
- Figure -09 Push Button Selection
-Step 8: The selected components will appear in the devices list. Select the component and place it in the design sheet by left-click., post which select all the associated components as shown in the circuit diagram below 
+
+ Push Button Selection
+ ### Step 8: The selected components will appear in the devices list. Select the component and place it in the design sheet by left-click., post which select all the associated components as shown in the circuit diagram below 
+#### Figure -10 Circuit diagram of LED interface on port -0
 ![image](https://user-images.githubusercontent.com/36288975/193398065-c12b4984-db8e-40cc-890d-221db1c35b0d.png)
 
  
-Figure -10 Circuit diagram of LED interface on port -0
-
+#### Figure -11 Hex file for simulation 
 ![image](https://user-images.githubusercontent.com/36288975/193398071-76df0a57-7e76-4868-9769-c63d220482b8.png)
 
- 
-Figure -11 Hex file for simulation 
-
-Step 9: Select the hex file from the Kiel program folder and import the program in to the microcontroller as shown in figure 11 ,  debug and if no errors in connections are found, run the VSM simulation to view the output.
+Step 9: 
+Select the hex file from the Kiel program folder and import the program in to the microcontroller as shown in figure 11 ,  debug and if no errors in connections are found, run the VSM simulation to view the output.
 
 
 ### Kiel - Program  
+```c
+NAME :- Silambarsan K
+REG NO:- 212221230101
+
+#include <LPC214x.h>   // define LPC2148 Header file
+#define led (1<<2)     // led macro for pin 2 of port0
+#define sw (1<<10)     // sw macro for pin 10 of port0
+int main(void)
+{
+	unsigned int x;
+	IO0DIR|=(~sw);   // configure P1.24 - P1.31 as input
+	IO0DIR|=led;     // configure P1.16 - P1.23 as output
+	while(1)
+	{
+		x = IOPIN0 & sw;   //save status of sw in variable x
+		if(x==sw)          // if switch open
+		{
+			IOCLR0|=led; // LED off
+		}
+		else               // if switch close
+		{
+			IOSET0 = led;  // LED on
+		}
+	}
+}
+
+
+```
+### Output:
+#### BEFORE SWITCHING ON LED:
+![ex-0301](https://user-images.githubusercontent.com/94525786/196035401-ae86aa83-10a9-4328-a80d-97a383047b1a.png)
+#### AFTER SWITCHING ON LED:
+![ex-0302](https://user-images.githubusercontent.com/94525786/196035444-baf57385-5de1-45d6-8b9a-6baaba9da6d5.png)
 
 
 ### Result :
-Interfacing a digital output with ARM microcontroller is executed 
+Interfacing a digital output with ARM microcontroller is executed. 
 
-### Output screen shots :
 
 
 
